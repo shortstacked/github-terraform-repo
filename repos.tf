@@ -13,15 +13,3 @@ resource "github_repository" "example" {
     repository = "java-template"
   }
 }
-
-resource "github_repository" "another_repo" {
-  name        = "java-from-terraform-again"
-  description = "My awesome codebase"
-
-  visibility = "public"
-
-  template {
-    owner      = "shortstacked"
-    repository = "java-template"
-  }
-}
